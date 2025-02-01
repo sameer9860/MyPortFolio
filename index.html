@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" href="title.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="logo.png" height="50" width="50" alt="logo">
+                Personal</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>This is Me</h2>
+                    <h1>Samir Khatiwada</h1>
+                    <p>
+                        A creative designer specializing in building unique online experiences with a global-reaching vision.
+                    </p>
+                    <a href="#about" class="btn">Discover More</a>
+                </div>
+                <div class="hero-image">
+                    <img src="my Photo.png" alt="Samir Khatiwada">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-details">
+                    <h3>Personal Details</h3>
+                    <p>
+                        I’m a passionate designer with years of experience creating visually appealing designs that resonate with people.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="my Photo.png" alt="About Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <a href="https://your-portfolio-link-1.com" target="_blank">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A short description of the project.</p>
+                </a>
+            </div>
+            
+                <div class="portfolio-item">
+                    <h2>My Resume</h2>
+                    <iframe 
+                        src="myResume.pdf" 
+                        width="100%" 
+                        height="600px" 
+                        style="border: none;">
+                    </iframe>
+                </div>
+           
+            
+            <div class="portfolio-item">
+                <a href="https://your-portfolio-link-2.com" target="_blank">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A short description of the project.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Samir Khatiwada. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
