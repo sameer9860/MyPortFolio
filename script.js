@@ -1,6 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector(".contact-form");
+    const form = document.getElementById("contact-form");
+    const formResponse = document.getElementById("form-response");
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -20,8 +20,20 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        alert("Form submitted successfully!");
-        form.reset();
+        const formData = new FormData(form);
+
+        fetch("send_email.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            formResponse.innerHTML = data;
+            form.reset();
+        })
+        .catch(error => {
+            formResponse.innerHTML = "An error occurred. Please try again.";
+        });
     });
 
     function validateEmail(email) {
