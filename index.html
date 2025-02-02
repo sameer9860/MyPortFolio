@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Samir Khatiwada</title>
     <link rel="icon" href="title.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,8 @@
         <div class="container">
             <h1 class="logo">
                 <img src="logo.png" height="50" width="50" alt="logo">
-                Personal</h1>
+                Personal
+            </h1>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -32,13 +33,10 @@
                 <div class="hero-text">
                     <h2>This is Me</h2>
                     <h1>Samir Khatiwada</h1>
-                    <p>
-                        A creative designer specializing in building unique online experiences with a global-reaching vision.
-                    </p>
-                    <a href="#about" class="btn">Discover More</a>
+                    <p>A creative developer specializing in building unique online experiences with a global-reaching vision.</p>
                 </div>
                 <div class="hero-image">
-                    <img src="my Photo.png" alt="Samir Khatiwada">
+                    <img src="samir.png" alt="Hero Image" height="150" width="150">
                 </div>
             </div>
         </div>
@@ -51,58 +49,36 @@
             <div class="about-content">
                 <div class="about-details">
                     <h3>Personal Details</h3>
-                    <p>
-                        I’m a passionate designer with years of experience creating visually appealing designs that resonate with people.
-                    </p>
+                    <p>I am  a proficient Python developer with extensive experience in building web applications.</p>
+                    <p>My expertise includes working with frameworks like Django and Flask to create robust and scalable solutions.</p>
                 </div>
                 <div class="about-image">
-                    <img src="my Photo.png" alt="About Image">
+                    <img src="myphotos.png" alt="About Image" height="500" width="500">
                 </div>
             </div>
         </div>
     </section>
 
-
-   <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio">
-    <div class="container">
-        <h2>My Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <a href="https://your-portfolio-link-1.com" target="_blank">
-                    <img src="https://via.placeholder.com/300" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>A short description of the project.</p>
-                </a>
-            </div>
-            
+    <!-- Portfolio Section
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <h2>My Resume</h2>
-                    <iframe 
-                        src="myResume.pdf" 
-                        width="100%" 
-                        height="600px" 
-                        style="border: none;">
-                    </iframe>
+                    <a href="https://your-portfolio-link-1.com" target="_blank">
+                        <img src="https://via.placeholder.com/300" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>A short description of the project.</p>
+                    </a>
                 </div>
-           
-            
-            <div class="portfolio-item">
-                <a href="https://your-portfolio-link-2.com" target="_blank">
-                    <img src="https://via.placeholder.com/300" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>A short description of the project.</p>
-                </a>
             </div>
         </div>
-    </div>
-</section>
+    </section> -->
 
-    
-
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form class="contact-form">
+        <form id="contact-form" class="contact-form">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
             
@@ -123,6 +99,7 @@
             
             <button type="submit" class="btn">Submit</button>
         </form>
+        <div id="form-response"></div>
     </section>
 
     <!-- Footer -->
