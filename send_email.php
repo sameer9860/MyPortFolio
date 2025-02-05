@@ -21,10 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mail($to, $subject, $body, $headers)) {
             echo "Thank you for your message!";
         } else {
-            echo "Sorry, your message could not be sent.";
+            echo "Failed to send email.";
+            error_log("Failed to send email to $to with subject $subject.");
         }
     } else {
         echo "Invalid email address.";
+        error_log("Invalid email address: $email");
     }
+} else {
+    echo "Invalid request method.";
+    error_log("Invalid request method: " . $_SERVER["REQUEST_METHOD"]);
 }
 ?>
